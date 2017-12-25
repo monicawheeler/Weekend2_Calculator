@@ -1,4 +1,6 @@
-let functionTest = function(x, y, calcType) {
+let calculatorCalcs = function(x, y, calcType) {
+    x = Number(x);
+    y = Number(y);
     let calculationResult = 0;
     if(calcType == 'Add') {
         calculationResult = x + y;
@@ -10,10 +12,10 @@ let functionTest = function(x, y, calcType) {
         calculationResult = x/y;
     }
     console.log('calculationResult', calculationResult);
-    
+    return calculationResult;
 }
 
 module.exports = {
-    functionTest: functionTest
+    calculatorCalcs: calculatorCalcs
 }
 
