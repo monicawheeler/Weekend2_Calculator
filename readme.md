@@ -1,10 +1,10 @@
-## Weekend Project Initial Planning
+## Weekend Project Planning
 - [x] Project initialization: setup files and init git/npm
 - [x] DOM: two inputs for values, and buttons for Add, Subtract, multiply, divide, and equals - results output
 - [x] Event listeners to capture values 
 - [x] Values bundled into an object
 - [x] POST on client to app.post on server
-- [ ] Create module that handles calculations, export and require
+- [x] Create module that handles calculations, export and require
 - [x] Calculation:
     - [x] the values of the object set as variables in order to calculate the return value
     - [x] the values of add, Subtract, etc set as an if statement to condition out the calcs
