@@ -21,17 +21,27 @@ function calculatorApp() {
 }
 
 function inputValues() {
+    // Define input values
     let firstNumber = $('#first-number').val();
     let secondNumber = $('#second-number').val();
 
+    // Bundle values into an object
     let calcObject = {
         x : firstNumber,
         y : secondNumber,
-        operator : mathOperator
+        type : mathOperator
     };
-
-    console.log('calcObject:', calcObject);
     
-
+    // Append DOM with list of 
     $('#history-list').append('<li>' + firstNumber + ' ' + mathOperator + ' ' + secondNumber + '</li>');
+
+    $.ajax({
+        method: 'POST',
+        url: '/calculator',
+        data: calcObject,
+        success: function(response){
+            console.log('back from POST with:', response);
+            
+        }
+    });
 }
