@@ -4,10 +4,10 @@
 - [x] Event listeners to capture values 
 - [x] Values bundled into an object
 - [x] POST on client to app.post on server
-- [ ] Create module that handles calculations
-- [ ] Calculation:
-    - [ ] the values of the object set as variables in order to calculate the return value
-    - [ ] the values of add, Subtract, etc set as an if statement to condition out the calcs
+- [ ] Create module that handles calculations, export and require
+- [x] Calculation:
+    - [x] the values of the object set as variables in order to calculate the return value
+    - [x] the values of add, Subtract, etc set as an if statement to condition out the calcs
 - [ ] GET from the server to the client side the result
 - [ ] GET from the server the history as a string to append to the DOM
 - [ ] Clear button to reset:
