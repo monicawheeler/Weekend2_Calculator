@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Calculator</title>
+    <script src="vendor/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -12,16 +13,20 @@
     <h1>JS Calculator</h1>
     <div class="calculator">
         <div class="inputs">
-            <input type="text" placeholder="First Number">
-            <input type="text" placeholder="Second Number">
-        </div>
-        <div class="math-buttons">
-            <button class="add" id="add-button">Add</button>
-            <button class="subtract" id="subtract-button">Subtract</button>
-            <button class="multiply" id="multiple-button">Multiply</button>
-            <button class="divide" id="divide-button">Divide</button>
+            <input type="text" id="first-number" placeholder="First Number">
+
+            <div class="math-buttons">
+                <button class="add" id="add-button">Add</button>
+                <button class="subtract" id="subtract-button">Subtract</button>
+                <button class="multiply" id="multiply-button">Multiply</button>
+                <button class="divide" id="divide-button">Divide</button>
+            </div>
+            <input type="text" id="second-number" placeholder="Second Number">
             <button class="equals" id="equals-button">Equals</button>
         </div>
+    </div>
+    <div class="history">
+        <ul id="history-list"></ul>
     </div>
 </body>
 </html>
