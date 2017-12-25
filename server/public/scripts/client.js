@@ -24,6 +24,14 @@ function inputValues() {
     let firstNumber = $('#first-number').val();
     let secondNumber = $('#second-number').val();
 
+    let calcObject = {
+        x : firstNumber,
+        y : secondNumber,
+        operator : mathOperator
+    };
+
+    console.log('calcObject:', calcObject);
+    
 
     $('#history-list').append('<li>' + firstNumber + ' ' + mathOperator + ' ' + secondNumber + '</li>');
 }

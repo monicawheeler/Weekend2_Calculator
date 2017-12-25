@@ -3,7 +3,7 @@
 - [x] DOM: two inputs for values, and buttons for Add, Subtract, multiply,
 divide, and equals
 - [x] Event listeners to capture values 
-- [ ] Values bundled into an object
+- [x] Values bundled into an object
 - [ ] POST on client to app.post on server
 - [ ] Create module that handles calculations
 - [ ] Calculation:
