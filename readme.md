@@ -8,8 +8,9 @@
 - [x] Calculation:
     - [x] the values of the object set as variables in order to calculate the return value
     - [x] the values of add, Subtract, etc set as an if statement to condition out the calcs
-- [ ] GET from the server to the client side the result
-- [ ] GET from the server the history as a string to append to the DOM
+- [x] Add class to create object
+- [x] GET from the server to the client side the result
+- [ ] GET from the server the response & history as a string to append to the DOM
 - [ ] Clear button to reset:
     - [ ] Clear history
     - [ ] Clear inputs

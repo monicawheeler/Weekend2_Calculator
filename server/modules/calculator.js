@@ -1,3 +1,5 @@
+let calcResult = 0;
+
 let calculatorCalcs = function(x, y, calcType) {
     x = Number(x);
     y = Number(y);
@@ -11,11 +13,17 @@ let calculatorCalcs = function(x, y, calcType) {
     } else { // divide
         calculationResult = x/y;
     }
-    console.log('calculationResult', calculationResult);
     return calculationResult;
+    
+    console.log('calculator.js - calculationResult', calculationResult);
+}
+
+let returnCalculation = function() {
+    return calcResult;
 }
 
 module.exports = {
+    returnCalculation: returnCalculation,
     calculatorCalcs: calculatorCalcs
-}
+};
 
