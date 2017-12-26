@@ -81,9 +81,11 @@ function getResults() {
 function displayHistory(history) {
     // Append DOM with list of history items
     for (let i = 0; i < history.length; i++) {
+        var $list = $('<li>');
+        $list.append(history[i]);
         console.log(history[i]);
-        $('#history-list').append('<li>' + history[i] + '</li>');
     }
+    $('#history-list').append($list);
 } // end displayHistory
 
 function getHistory() {
