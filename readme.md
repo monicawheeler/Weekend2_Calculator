@@ -10,10 +10,11 @@
     - [x] the values of add, Subtract, etc set as an if statement to condition out the calcs
 - [x] Add class to create object
 - [x] GET from the server to the client side the result
-- [ ] GET from the server the response & history as a string to append to the DOM
+- [x] GET from the server the response & history as a string to append to the DOM
 - [ ] Clear button to reset:
     - [ ] Clear history
     - [ ] Clear inputs
+- [ ] Fix history list so it doesn't append with each load/calc
 - [ ] Style buttons
 
 ## Hard Mode

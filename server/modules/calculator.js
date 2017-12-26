@@ -1,4 +1,4 @@
-let calcResult = 0;
+let calcResult = [];
 
 let calculatorCalcs = function(x, y, calcType) {
     x = Number(x);
@@ -13,7 +13,7 @@ let calculatorCalcs = function(x, y, calcType) {
     } else { // divide
         calculationResult = x/y;
     }
-    return calculationResult;
+    calcResult.push(calculationResult);
     
     console.log('calculator.js - calculationResult', calculationResult);
 }

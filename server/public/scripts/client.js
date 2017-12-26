@@ -38,6 +38,10 @@ function getCalculation() {
     // Bundle values into an object
     let calcObject = new Operation(firstNumber, secondNumber, mathOperator);
 
+    // Clear input fields
+    $('#first-number').val('');
+    $('#second-number').val('');
+
     $.ajax({
         method: 'POST',
         url: '/calculator',
@@ -52,7 +56,14 @@ function getCalculation() {
 
 
 function displayResults(result) {
-    $('.results').append(result);
+    console.log('result in displayResults', result);
+    
+    // $('.results').append(result);
+    // Replace results with returned results
+    for (let i = 0; i < result.length; i++) {
+        console.log(result[i]);
+        $('.results').text(result[i]);
+    }
 }
 
 function getResults() {
@@ -68,9 +79,11 @@ function getResults() {
 }
 
 function displayHistory(history) {
-    // Append DOM with list of 
-    // TODO - loop through history array and append to DOM
-    $('#history-list').append('<li>' + history + '</li>');
+    // Append DOM with list of history items
+    for (let i = 0; i < history.length; i++) {
+        console.log(history[i]);
+        $('#history-list').append('<li>' + history[i] + '</li>');
+    }
 } // end displayHistory
 
 function getHistory() {

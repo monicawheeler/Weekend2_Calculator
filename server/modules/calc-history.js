@@ -3,7 +3,17 @@ let historicalData = ['1 + 2 = 3'];
 
 //  update the historicalData array with new history item
 let addHistory = function(x, y, type) {
-    historicalData.push(x + ' ' + y + ' ' + type);
+    let operator = '';
+    if (type == "Add") {
+        operator = '+'
+    } else if(type == "Subtract") {
+        operator = '-'
+    } else if(type == "Multiply") {
+        operator = '*'
+    } else {
+        operator = '/'
+    }
+    historicalData.push(x + ' ' + operator + ' ' + y);
 }
 
 // return all the historical data history
