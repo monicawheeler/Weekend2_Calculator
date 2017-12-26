@@ -1,5 +1,5 @@
 // create array to hold historical data
-let historicalData = ['1 + 2 = 3'];
+let historicalData = [];
 
 //  update the historicalData array with new history item
 let addHistory = function(x, y, type) {
@@ -21,7 +21,12 @@ let allTheHistory = function() {
     return historicalData;
 }
 
+let clearAll = function() {
+    historicalData = [];
+}
+
 module.exports = {
     allTheHistory : allTheHistory,
-    addHistory : addHistory
+    addHistory : addHistory,
+    clearAll: clearAll
 };

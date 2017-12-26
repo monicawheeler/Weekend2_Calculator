@@ -11,9 +11,9 @@
 - [x] Add class to create object
 - [x] GET from the server to the client side the result
 - [x] GET from the server the response & history as a string to append to the DOM
-- [ ] Clear button to reset:
-    - [ ] Clear history
-    - [ ] Clear inputs
+- [x] Clear button to reset:
+    - [x] Clear history
+    - [x] Clear inputs
 - [ ] Fix history list so it doesn't append with each load/calc
 - [ ] Style buttons
 

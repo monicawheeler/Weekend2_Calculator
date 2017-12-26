@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 
 app.post('/calculator', function(req, res){
-    console.log('/calculator POST hit', req.body);
+    //console.log('/calculator POST hit', req.body);
     // calculatorCalcs generates the calculation
     calc.calculatorCalcs(req.body.x, req.body.y, req.body.type);
     // addHistory is pushing history items to an array
@@ -27,6 +27,12 @@ app.get('/history', function(req, res) {
 app.get('/calculator', function(req, res) {
     res.send(calc.returnCalculation());
 });
+
+app.delete('/clearAll', function(req, res) {
+    calc.clearAll();
+    history.clearAll();
+    res.send('cleared');
+})
 
 app.listen(port, function(){
     console.log('listening on port:', port);

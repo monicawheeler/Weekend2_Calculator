@@ -15,15 +15,20 @@ let calculatorCalcs = function(x, y, calcType) {
     }
     calcResult.push(calculationResult);
     
-    console.log('calculator.js - calculationResult', calculationResult);
+    //console.log('calculator.js - calculationResult', calculationResult);
 }
 
 let returnCalculation = function() {
     return calcResult;
 }
 
+let clearAll = function() {
+    calcResult = [];
+}
+
 module.exports = {
     returnCalculation: returnCalculation,
-    calculatorCalcs: calculatorCalcs
+    calculatorCalcs: calculatorCalcs,
+    clearAll: clearAll
 };
 

@@ -28,6 +28,7 @@ function calculatorApp() {
         mathOperator = 'Divide';
     });
     $('#equals-button').on('click', getCalculation);
+    $('#clear-button').on('click', clearAll);
 } // end calculatorApp
 
 function getCalculation() {
@@ -57,12 +58,11 @@ function getCalculation() {
 
 function displayResults(result) {
     console.log('result in displayResults', result);
-    
-    // $('.results').append(result);
+    // $('#results').append(result);
     // Replace results with returned results
     for (let i = 0; i < result.length; i++) {
         console.log(result[i]);
-        $('.results').text(result[i]);
+        $('#results').text(result[i]);
     }
 }
 
@@ -94,6 +94,18 @@ function getHistory() {
         success: function(response) {
             console.log('response in GET in client.js', response);
             displayHistory(response);
+        }
+    });
+}
+
+function clearAll() {
+    $.ajax({
+        method: 'DELETE',
+        url: '/clearAll',
+        success: function(response) {
+            console.log('response', response);
+            $('#history-list').empty();
+            $('#results').html('0');
         }
     });
 }
