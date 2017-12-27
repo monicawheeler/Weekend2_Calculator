@@ -14,6 +14,7 @@ $(document).ready(calculatorApp);
 
 function calculatorApp() {
     getHistory();
+    
     // Event Listeners
     $('#add-button').on('click', function() {
         mathOperator = 'Add';
@@ -55,16 +56,16 @@ function getCalculation() {
     });
 } // end inputValues
 
-
 function displayResults(result) {
-    console.log('result in displayResults', result);
+    //console.log('result in displayResults', result);
     // $('#results').append(result);
+    
     // Replace results with returned results
     for (let i = 0; i < result.length; i++) {
-        console.log(result[i]);
+        //console.log(result[i]);
         $('#results').text(result[i]);
     }
-}
+} // end displayResults
 
 function getResults() {
     //console.log('getResults is starting');
@@ -72,11 +73,11 @@ function getResults() {
         method: 'GET',
         url: '/calculator',
         success: function(response) {
-            console.log('getResults GET response:', response);
+            //console.log('getResults GET response:', response);
             displayResults(response);
         }
     });
-}
+} // end getResults
 
 function displayHistory(history) {
     // Append DOM with list of history items
@@ -85,7 +86,8 @@ function displayHistory(history) {
         $list.append(history[i]);
         console.log(history[i]);
     }
-    $('#history-list').append($list);
+    var historyList = $('#history-list').append($list);
+    return historyList;
 } // end displayHistory
 
 function getHistory() {
@@ -98,7 +100,7 @@ function getHistory() {
             displayHistory(response);
         }
     });
-}
+} // end getHistory
 
 function clearAll() {
     $.ajax({
@@ -110,4 +112,4 @@ function clearAll() {
             $('#results').html('0');
         }
     });
-}
+} // end clearAll
