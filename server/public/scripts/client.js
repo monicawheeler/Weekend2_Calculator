@@ -88,6 +88,7 @@ function displayHistory(history) {
     }
     var historyList = $('#history-list').append($list);
     return historyList;
+    
 } // end displayHistory
 
 function getHistory() {
