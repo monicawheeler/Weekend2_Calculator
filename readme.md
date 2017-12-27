@@ -14,7 +14,8 @@
 - [x] Clear button to reset:
     - [x] Clear history
     - [x] Clear inputs
-- [ ] Fix history list so it doesn't append with each load/calc
+- [x] Fix history list so it doesn't append with each calc
+- [ ] Fix history list so it doesn't load the last item in the array
 - [ ] Style buttons
 
 ## Hard Mode
