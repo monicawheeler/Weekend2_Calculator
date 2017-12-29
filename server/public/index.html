@@ -7,6 +7,8 @@
     <title>JS Calculator</title>
     <script src="vendor/jquery.min.js"></script>
     <script src="scripts/client.js"></script>
+    <script src="https://use.fontawesome.com/eab368ada0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -23,10 +25,11 @@
             <input type="text" id="second-number" placeholder="Second Number">
             <button class="equals" id="equals-button">Equals</button>
         </div>
-        <div class="results-display">Results: <span id="results"></span></div>
+        <div class="results-display">Result: <span id="results">0</span></div>
     </div>
     <button id="clear-button">Clear Results</button>
     <div class="history">
+        <h2>History</h2>
         <ul id="history-list"></ul>
     </div>
 </body>
