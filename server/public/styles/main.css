@@ -38,17 +38,11 @@ input:focus {
     display: flex;
 }
 
-.add,
-.subtract,
-.multiply,
-.divide {
+.button {
     font-size: 0;
 }
 
-.add:after,
-.subtract:after,
-.multiply:after,
-.divide:after {
+.button:after {
     font-size: 20px;
 }
 
