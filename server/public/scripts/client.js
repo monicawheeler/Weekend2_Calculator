@@ -80,14 +80,11 @@ function getResults() {
 } // end getResults
 
 function displayHistory(history) {
+    $('#history-list').empty();
     // Append DOM with list of history items
     for (let i = 0; i < history.length; i++) {
-        var $list = $('<li>');
-        $list.append(history[i]);
-        console.log(history[i]);
+        $('#history-list').prepend('<li>' + history[i] + '</li>');
     }
-    var historyList = $('#history-list').append($list);
-    return historyList;
     
 } // end displayHistory
 

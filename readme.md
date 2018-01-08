@@ -16,8 +16,12 @@
     - [x] Clear inputs
 - [x] Fix history list so it doesn't append with each calc
 - [ ] Fix history list so it doesn't load the last item in the array
-- [ ] Style buttons
+- [x] Style buttons
 
 ## Hard Mode
 - [ ] Convert inputs to numerical buttons
 
+## Fixes
+- [x] Update button classes to make more DRY
+- [ ] Review history so it loads entire list
+- [ ] Get the results and add to the object rather than create a unique array

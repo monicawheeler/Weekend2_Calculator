@@ -14,7 +14,6 @@ let calculatorCalcs = function(x, y, calcType) {
         calculationResult = x/y;
     }
     calcResult.push(calculationResult);
-    
     //console.log('calculator.js - calculationResult', calculationResult);
 }
 
