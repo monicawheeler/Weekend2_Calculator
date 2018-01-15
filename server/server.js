@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const calc = require( './modules/calculator');
 const history = require( './modules/calc-history');
 
-const port = 2828;
+const port = process.env.PORT || 5000;
 
 app.use(express.static('server/public'));
 app.use(bodyParser.urlencoded({extended:true})); 
